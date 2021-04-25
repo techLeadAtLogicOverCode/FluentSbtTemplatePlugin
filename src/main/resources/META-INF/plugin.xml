@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>com.logicovercode</id>
+    <name>LogicOverCode</name>
+    <version>0.0.1</version>
+    <vendor email="cto@logicovercode.com" url="http://www.logicovercode.com">LogicOverCode</vendor>
+    <description>Logic Over Code Intellij Plugin that provides templates, examples and exercises</description>
+    <idea-version since-build="211.0"/>
+
+    <depends>org.intellij.scala</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectTemplatesFactory implementation="com.logicovercode.isplugin.wizfactory.LogicOverCodeWizardFactory" order="first"/>
+    </extensions>
+
+</idea-plugin>
